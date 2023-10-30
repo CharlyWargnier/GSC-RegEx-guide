@@ -17,12 +17,24 @@ def main():
     """)
 
     st.subheader('')
+
     st.subheader('📚 1. Getting Started: Basic RegEx', divider='blue')
     st.write("**Including Specific Words**")
     st.code(".*seo.*", language='plaintext')
+
     st.write("**Excluding Patterns**")
-    st.code("(Use the custom (regex) filter option under \"Doesn’t match regex\")", language='plaintext')
+    st.write("- Exclude range of characters: `[^abc]` will match any character except `a`, `b`, or `c`.")
+    st.code("[^abc]", language='plaintext')
+    
+    st.write("- Exclude non-word characters common in URLs:")
+    st.code("[^\\/\\.\\-\\:]", language='plaintext')
+    
+    st.write("- Exclude word characters: `[^0-9A-Za-z_]` will match any character that is not a word character.")
+    st.code("[^0-9A-Za-z_]", language='plaintext')
+
     st.write("**Pages Path Focus**")
+
+    st.write("Match specific paths within a domain using regex. For example, the pattern below matches URLs under `path1`, `path2`, or `path3` on `www.example.com`:")
     st.code("^https://www.example.com/(path1|path2|path3)/$", language='plaintext')
 
     st.subheader('📏 2. Query and URL Length Insights', divider='green')
