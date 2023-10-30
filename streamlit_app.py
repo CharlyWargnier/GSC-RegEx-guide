@@ -6,7 +6,7 @@ def main():
     st.subheader('')
     
     st.markdown("""
-    Inspired by [this article from the awesome JC Chouinard](https://www.jcchouinard.com/regex-in-google-search-console/), this cheat sheet harnesses the power of regular expressions to provide insights from your Google Search Console data. This cheat sheet focuses on the Re2 syntax used in GSC, providing a comprehensive set of patterns for different analysis requirements.
+    Inspired by [this article from the awesome JC Chouinard](https://www.jcchouinard.com/regex-in-google-search-console/), this cheat sheet harnesses the power of regular expressions to provide insights from your Google Search Console data!
 
     Everyone is welcome to contribute! Feel free to add PRs or suggestions to [this project on GitHub](https://github.com/CharlyWargnier/GSC-RegEx-Guide/blob/main/streamlit_app.py). Your input is greatly appreciated!
     """)
