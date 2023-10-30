@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="GSC RegEx Cheat Sheet",
+    page_icon="🔍"
+)
+
 def main():
     st.header('🔍 GSC RegEx Cheat Sheet', divider='rainbow')
 
