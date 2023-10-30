@@ -18,7 +18,7 @@ def main():
 
     st.subheader('')
 
-    st.subheader('📚 1. Getting Started: Basic RegEx', divider='blue')
+    st.subheader('📚 1. Specific Path Matching', divider='blue')
     st.write("**Including Specific Words**")
     st.write("This pattern matches any string containing 'seo'.")
     st.code(".*seo.*", language='plaintext')
